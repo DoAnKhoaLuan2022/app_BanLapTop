@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Address">
+
+    <RelativeLayout
+        android:id="@+id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:background="#1a94ff">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/iconBack"
+            android:text="Chi tiết địa chỉ"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_addAddress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/iconCart"
+            android:src="@drawable/ic_baseline_add_location_24" />
+
+        <ImageView
+            android:id="@+id/iconCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+
+        <!--        <TextView-->
+
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="32dp"-->
+        <!--            android:background="@drawable/radiussocart"-->
+        <!--            android:paddingLeft="5dp"-->
+        <!--            android:text="0"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="10pt" />-->
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rcv_DiaChi"
+        android:layout_below="@id/tb"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

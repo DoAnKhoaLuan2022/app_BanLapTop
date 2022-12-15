@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_1"
+        android:enabled="true"
+        android:icon="@drawable/menu_home"
+        android:title="Trang chủ"/>
+    <item
+        android:id="@+id/Click_to_cart"
+        android:enabled="true"
+        android:icon="@drawable/menu_bag"
+        android:title="Giỏ hàng"/>
+    <item
+        android:id="@+id/page_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_computer"
+        android:title="Danh sach"/>
+    <item
+        android:id="@+id/page_5"
+        android:enabled="true"
+        android:icon="@drawable/menu_pp"
+        android:title="Cài đặt"/>
+</menu>

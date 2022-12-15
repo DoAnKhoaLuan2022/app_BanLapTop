@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Activity.PlashScreen">
+
+    <ImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon" />
+<!--    <TextView-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:text="welcome to shop"-->
+<!--        android:id="@+id/tvText"-->
+<!--        android:textColor="#C9F6F3F3"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="17pt"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+</RelativeLayout>
