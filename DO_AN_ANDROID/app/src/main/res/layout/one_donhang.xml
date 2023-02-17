@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10sp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ma"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_ma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttoncamcam"
+            android:padding="8dp"
+            android:text="#mã đơn hàng:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_maDonHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/title_ma"
+            android:padding="8dp"
+            android:text="Mã đơn hàng"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ED6216"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="Trạng thái"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_below="@id/ma"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/ivNewsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lap33"/>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="4dp"
+            android:paddingLeft="8dp">
+
+
+            <TextView
+                android:id="@+id/one_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="Tên sản phẩm"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/one_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one_name"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Giá sản phẩm"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/one_sl"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_below="@id/one_price"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/one_price" />
+
+            <ImageView
+                android:id="@+id/iv_del"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/one_sl"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_delete_sweep_24" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/linearLayout"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_sl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="8dp"
+            android:text="Số lượng :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_sl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/title_sl"
+            android:padding="8dp"
+            android:text="Số lượng"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTraHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/btnHuyHang"
+            android:background="@drawable/buttoncamcam"
+            android:padding="8dp"
+            android:text="trả hàng"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHuyHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttoncamcam"
+            android:padding="8dp"
+            android:text="Hủy hàng"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>
